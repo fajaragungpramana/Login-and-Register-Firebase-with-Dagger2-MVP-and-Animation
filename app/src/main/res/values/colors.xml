@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Color Opacity -->
+    <color name="colorOpacityGray">#EBEBEB</color>
+    <color name="colorOpacityBlack">#CC000000</color>
+
+    <!-- Color Full -->
+    <color name="colorPrimary">#C900FF</color>
+    <color name="colorPrimaryDark">#8000FF</color>
+    <color name="colorAccent">#D81B60</color>
+
+</resources>

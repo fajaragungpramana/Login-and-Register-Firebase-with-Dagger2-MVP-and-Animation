@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">FirebaseApp</string>
+    <string name="log_in">Log In</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="don_t_have_an_account_register">Don\'t have an account? <font color='#C900FF'>REGISTER</font></string>
+    <string name="register">Register</string>
+    <string name="username">Username</string>
+    <string name="terms_and_conditions"><u><font color='#C900FF'>Terms and Conditions</font></u></string>
+    <string name="by_clicking_this_form_you_agree_with_our">By clicking this form you agree with our</string>
+    <string name="already_have_an_account_log_in">Already have an account? <font color='#C900FF'>LOG IN</font></string>
+    <string name="register_successfully">Register Successfully</string>
+    <string name="you_can_login_now">You can login now</string>
+    <string name="login_now">Login Now</string>
+    <string name="invalid_username">Username min 4 character!</string>
+    <string name="invalid_email">Please, input a valid email!</string>
+    <string name="invalid_password">Password min 6 character!</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="welcome">Welcome...</string>
+    <string name="invalid_password2">Please insert the password!</string>
+    <string name="hello_welcome_to_activity_main">Hello welcome to activity main</string>
+    <string name="log_out">Log Out</string>
+</resources>

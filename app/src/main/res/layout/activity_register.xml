@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusableInTouchMode="true">
+
+    <ImageView
+        android:id="@+id/iv_app_logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/mengsoft_logo"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/iv_app_logo"
+        android:layout_marginTop="25dp"
+        android:text="@string/register"
+        android:textSize="@dimen/text_high"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="true" />
+
+    <EditText
+        android:id="@+id/et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:drawablePadding="15dp"
+        android:layout_below="@id/tv_register"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_username"
+        android:inputType="textPersonName"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/username"
+        android:textColorHint="@color/colorOpacityBlack"
+        tools:ignore="Autofill" />
+
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:padding="15dp"
+        android:drawablePadding="15dp"
+        android:layout_below="@id/et_email"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_locked"
+        android:inputType="textPassword"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/password"
+        android:textColorHint="@color/colorOpacityBlack"
+        tools:ignore="Autofill" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_username"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/field_background"
+        android:drawableStart="@drawable/ic_mail"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/raleway_regular"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:padding="15dp"
+        android:textColor="@android:color/black"
+        android:textColorHint="@color/colorOpacityBlack"
+        android:textSize="@dimen/text_mid"
+        tools:ignore="Autofill" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_login"
+        android:layout_marginBottom="50dp"
+        android:layout_marginStart="@dimen/margin_high"
+        android:layout_marginEnd="@dimen/margin_high"
+        android:background="@drawable/button_background1"
+        android:text="@string/register"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_terms_of_use"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/btn_register"
+        android:layout_marginBottom="@dimen/margin_high"
+        android:text="@string/terms_and_conditions"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@id/tv_terms_of_use"
+        android:text="@string/by_clicking_this_form_you_agree_with_our"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/margin_mid"
+        android:text="@string/already_have_an_account_log_in"
+        android:textSize="@dimen/text_low"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:indeterminate="true"
+        android:indeterminateTint="@color/colorPrimary"
+        android:visibility="invisible"/>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="50dp"
+        android:text="@string/register_successfully"
+        android:textSize="@dimen/text_high"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv2"
+        android:layout_alignStart="@id/tv2"
+        android:text="@string/you_can_login_now"
+        android:textSize="@dimen/text_mid"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/raleway_regular" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:layout_below="@id/tv3"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/margin_low"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/button_background1"
+        android:text="@string/login_now"
+        android:textSize="18sp"
+        android:textColor="@android:color/white"
+        android:fontFamily="@font/raleway_regular"
+        android:textAllCaps="false" />
+
+</RelativeLayout>
